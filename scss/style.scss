@@ -214,3 +214,27 @@ button {
     color: $black;
     cursor: pointer;
 }
+
+.contacts { 
+        height: 270px;
+        
+        ul li {
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba( 255,255,255, .12);
+            display: flex;
+            align-content: center;
+            margin-bottom: 8px;
+
+            label {
+                width: 22px;
+            }
+
+            span {
+                margin-left: 12px;
+            }
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+}
