@@ -1,4 +1,13 @@
 $red: #741600;
+$black: #2e0800;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; 
+}
+  
 
 html {
     height: 100%;
@@ -127,4 +136,81 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.content {
+    padding: 105px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    width: 530px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px 40px;
+}
+
+.contacts {
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 30px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    border-bottom: 1px solid rgba( 255,255,255, .12);
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+}
+
+.form-input {
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input, textarea {
+        display: block;
+        width: 100%;
+        background-color: #ececec;
+        color: $black;
+        padding: 10px;
+        margin-bottom: 12px;
+        font-size: 13px;
+    }
+
+    textarea {
+        height: 94px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        resize: none;
+    }
+    
+}
+
+.form-check {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+
+    a {
+        color: #5bc7e6;
+    }
+
+    span {
+        margin-left: 5px;
+    }
+}
+
+button {
+    width: 130px;
+    height: 34px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    line-height: 34px;
+    color: $black;
+    cursor: pointer;
 }
