@@ -1,0 +1,130 @@
+$red: #741600;
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    color: #fff;
+    line-height: 17px;
+    background: url('/images/bg1.jpg') no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    margin: 0
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 920px;
+    margin: 0 auto;
+}
+
+.lang {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 8px 0;
+
+    > a {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+
+        span {
+            margin-left: 5px;
+        }
+    }
+}
+
+nav {
+    background-color: $red;
+    height: 60px;
+    position: relative;
+
+    ul {
+        height: 100%;
+        display: flex;
+
+        li {
+            height: 100%;
+            width: 210px;
+            position: relative;
+            text-align: center;
+            line-height: 60px;
+            transition: background-color .5s;
+
+            &::before {
+                display: block;
+                height: 100%;
+                content: '';
+                border-left: 1px solid #601200;
+                border-right: 1px solid #871a00;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            a {
+                display: block;
+                height: 100%;
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 19px;
+            }
+
+            &:last-child {
+                &::after {
+                    display: block;
+                    height: 100%;
+                    content: '';
+                    border-left: 1px solid #601200;
+                    border-right: 1px solid #871a00;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            &:nth-child(3) {
+                margin-left: 80px;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+        }
+    }
+}
+
+.logo {
+    width: 80px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: #424242;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -40px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
