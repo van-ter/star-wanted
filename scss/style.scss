@@ -139,7 +139,7 @@ nav {
 }
 
 .content {
-    padding: 105px 0;
+    padding: 87px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -237,4 +237,30 @@ button {
         li:last-child {
             border-bottom: none;
         }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 80px;
+    border-top: 1px solid rgba( 255,255,255, .12);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+       
+        .text {
+            line-height: 80px;
+            text-transform: uppercase;
+            font-size: 48px;
+            margin-left: 10px;
+        }
+
+        a {
+            line-height: 80px;
+
+            img {
+                margin-top: 16px;
+            }
+        }
+    }    
 }
