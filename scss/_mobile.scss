@@ -1,0 +1,224 @@
+@media screen and (max-width: 960px)  {
+    .container {
+        width: 100%;
+    }
+
+    .lang {
+        padding: 8px 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    #slider1 {
+        padding: 74px 40px;
+    }
+
+    #slider2 {
+        height: 425px;
+
+        .swiper-slide {
+            width: 100%;
+        }
+
+        .swiper-button-next {
+            right: 0;
+            margin-right: 0;
+        }
+
+        .swiper-button-prev {
+            left: 0;
+            margin-left: 0;
+        }
+        
+    }
+
+    #slider3 .swiper-slide {
+        width: 100%;
+        margin: 0;
+    }
+
+    .slider3-wraper {
+        padding: 70px 40px;
+    }
+
+    .section3 {
+
+        .row {
+            padding: 0 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .btn-menu {
+        display: block;
+    }
+
+    nav {
+        height: auto;
+        background-color: transparent;
+
+        .logo {
+            height: 100px;
+            top: -40px;
+
+            img {
+                width: 60%;
+            }
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .lang {
+        span {
+            display: none;
+        }
+
+        a {
+            margin-left: 10px;
+
+            img {
+                height: 32px;
+            }
+        }
+    }
+
+    #slider1 {
+        padding: 80px 10px 60px 10px;
+
+        .swiper-slide {
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .arrows {
+            display: none;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            padding-right: 10px;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+        
+        .category {
+            font-size: 18px;
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+    #slider2 {
+        height: 270px;
+
+        .swiper-slide {
+            justify-content: flex-end;
+        }
+
+        .info {
+            margin: 0 40px 0 0;
+            width: auto;
+        }
+
+        .date {
+            font-weight: 300;
+            color: $white;
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            display: none;
+        }        
+    }
+
+    .arrows {
+        height: 32px;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 50%;
+        margin-top: -16px;
+    }
+
+    .section3 {
+        padding-top: 20px;
+
+        h1 {
+            font-size: 18px;
+        }
+
+        .section3-top {
+            justify-content: space-between;
+
+            & > div {
+                width: auto;
+            }
+        }
+
+    }
+
+    .workers {
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    footer {
+        .col-5 {
+            display: none;
+        }
+
+        .col-7 {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    
+    .popup-booking {
+        width: 96%;
+        padding: 16px;
+        position: relative;
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #slider3 {
+
+        .workers {
+            width: 100%;
+            margin-left: 69px;
+        }
+
+        .workers-txt {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+}
