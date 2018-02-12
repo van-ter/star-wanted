@@ -485,7 +485,8 @@ nav {
     color: #a7a7a7;
     text-transform: uppercase;
     margin-bottom: 10px; }
-  #slider1 p {
+  #slider1 p {  
+    padding-right: 10px;
     line-height: 17px;
     font-weight: 400;
     margin-bottom: 10px;
