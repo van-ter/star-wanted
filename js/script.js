@@ -1,54 +1,51 @@
 $(document).ready(function() {
-  var mySwiper = new Swiper('#slider1', {
-    speed: 600,
-    spaceBetween: 0,
-    loop: true,
-    navigation: {
-      nextEl: '#slider1 .swiper-button-next',
-      prevEl: '#slider1 .swiper-button-prev'
-    },
-    effect: 'fade',
-    pagination: {
-      el: '#slider1 .swiper-pagination',
-      clickable: true
+  $('.sandwich').click(function(){
+    $('nav').toggleClass('adaptive');
+  });
+
+  $('.i-search').click(function(){
+    if($(this).hasClass('search-false')){
+      $(this).removeClass('search-false')
+      $(this).parent('.wrapper-search').addClass('show-search')
     }
   });
 
-  var mySwiper2 = new Swiper('#slider2', {
-    speed: 600,
-    spaceBetween: 0,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 'auto',
-    navigation: {
-      nextEl: '#slider2 .swiper-button-next',
-      prevEl: '#slider2 .swiper-button-prev'
+  $(document).mouseup(function (e){ 
+    var div = $(".i-search, input"); 
+    if (!div.is(e.target) && div.has(e.target).length === 0) { 
+      $(".i-search").addClass('search-false')
+      $(".i-search").parent('.wrapper-search').removeClass('show-search')
+    }
+    // var div2 = $("nav"); 
+    // if (!div2.is(e.target) && (div2.hasClass('adaptive')) && div2.has(e.target).length === 0) { 
+    //   $('nav').toggleClass('adaptive');
+    //   $('.sandwich').toggleClass('close');
+    // }
+  });
+  var $headerH = $('header').height();
+  $('header').css('height', $headerH);
+
+  $(window).on('scroll load', function () {
+    if ($(document).scrollTop() > 5) {
+      $(".main-header").addClass("fixed");
+      $('.home-top').addClass('scrol');
+      $('.baner .btn').addClass('btn-red');
+    } else {
+      $(".main-header").removeClass("fixed");
+      $('.home-top').removeClass('scrol');
+      $('.baner .btn').removeClass('btn-red')
     }
   });
 
-  var mySwiper3 = new Swiper('#slider3', {
-    speed: 600,
-    slidesPerView: 'auto',
-    spaceBetween: 0,
-    loop: true,
-    navigation: {
-      nextEl: '.slider3-wraper .swiper-button-next',
-      prevEl: '.slider3-wraper .swiper-button-prev'
-    }
-  });
-
-  $('.book').magnificPopup({
+  $('#form').magnificPopup({
     type: 'inline',
     preloader: false
   });
 
-  $('.btn-menu').magnificPopup({
-    type: 'inline',
-    preloader: false,
-    callbacks: {
-      close: function() {
-        $('#menu').removeClass('mfp-hide');
-      }
-    }
+  $('#designe').load('../form-blade.html');
+
+  $('.sandwich').click(function(){
+    $(this).toggleClass('close');
+    $(this).closest('nav').toggleClass('adaptive');
   });
 });

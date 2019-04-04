@@ -199,7 +199,13 @@ textarea {
     vertical-align: baseline; /* 3 */
     *vertical-align: middle; /* 3 */
 }
-
+button:focus,
+input:focus,
+button:active,
+input:active{
+    outline: 0;
+    border: 0;
+}
 button,
 input {
     line-height: normal;
